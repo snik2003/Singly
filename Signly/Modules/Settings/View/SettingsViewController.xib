@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Signly" customModuleProvider="target">
+            <connections>
+                <outlet property="homeButton" destination="9id-EQ-yEU" id="6yL-co-BzC"/>
+                <outlet property="settingsButton" destination="D15-vH-cga" id="JBI-uR-pRV"/>
+                <outlet property="tableView" destination="Jeb-2h-Kir" id="fmr-yk-LKG"/>
+                <outlet property="tableViewTopConstraint" destination="4HV-au-de8" id="mqo-7c-KH9"/>
+                <outlet property="titleLabel" destination="Dog-Zu-PbA" id="fJV-gM-QvP"/>
+                <outlet property="view" destination="Fb9-aX-Eil" id="Bmk-75-svc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Fb9-aX-Eil">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dog-Zu-PbA">
+                    <rect key="frame" x="24" y="66" width="366" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Mii-6u-TMy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qde-Tk-wHA" userLabel="View 1">
+                    <rect key="frame" x="0.0" y="124" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JLp-gR-xwc"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-2h-Kir">
+                    <rect key="frame" x="0.0" y="125" width="414" height="691"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaf-34-iZy" userLabel="View 2">
+                    <rect key="frame" x="0.0" y="815" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="g8S-qG-KQn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9id-EQ-yEU" userLabel="HomeButton">
+                    <rect key="frame" x="40" y="827" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="MMa-3G-XZL"/>
+                        <constraint firstAttribute="width" constant="48" id="gkg-gN-bFR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="24" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Home"/>
+                    <connections>
+                        <action selector="homeButtonAction" destination="-1" eventType="touchUpInside" id="piq-xG-p9M"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-icon" translatesAutoresizingMaskIntoConstraints="NO" id="HJZ-Bg-iC8">
+                    <rect key="frame" x="52" y="827" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Mak-fZ-66L"/>
+                        <constraint firstAttribute="width" constant="24" id="hTq-6C-lex"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D15-vH-cga" userLabel="SettingsButton">
+                    <rect key="frame" x="326" y="827" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="VZ8-u6-jU8"/>
+                        <constraint firstAttribute="height" constant="48" id="f9e-Ie-o7o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="24" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Settings"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings-icon-selected" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-5N-qh3">
+                    <rect key="frame" x="338" y="827" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="0sW-vS-EpR"/>
+                        <constraint firstAttribute="width" constant="24" id="GX2-it-8gw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aEe-Wo-mAS"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Dog-Zu-PbA" firstAttribute="centerX" secondItem="aEe-Wo-mAS" secondAttribute="centerX" id="0DZ-0X-Ya2"/>
+                <constraint firstItem="Zaf-34-iZy" firstAttribute="top" secondItem="Jeb-2h-Kir" secondAttribute="bottom" constant="-1" id="1hX-0O-Nhb"/>
+                <constraint firstAttribute="bottom" secondItem="Zaf-34-iZy" secondAttribute="bottom" constant="80" id="2Xb-ba-ExF"/>
+                <constraint firstItem="HJZ-Bg-iC8" firstAttribute="centerX" secondItem="9id-EQ-yEU" secondAttribute="centerX" id="49B-Zx-hzo"/>
+                <constraint firstItem="Jeb-2h-Kir" firstAttribute="top" secondItem="qde-Tk-wHA" secondAttribute="bottom" id="4HV-au-de8"/>
+                <constraint firstItem="Jeb-2h-Kir" firstAttribute="centerX" secondItem="aEe-Wo-mAS" secondAttribute="centerX" id="Dcj-mM-TtU"/>
+                <constraint firstItem="9id-EQ-yEU" firstAttribute="top" secondItem="Zaf-34-iZy" secondAttribute="bottom" constant="11" id="GpZ-ro-haH"/>
+                <constraint firstItem="D15-vH-cga" firstAttribute="top" secondItem="Zaf-34-iZy" secondAttribute="bottom" constant="11" id="HBf-RL-X5v"/>
+                <constraint firstItem="9id-EQ-yEU" firstAttribute="leading" secondItem="aEe-Wo-mAS" secondAttribute="leading" constant="40" id="J2d-8E-YuL"/>
+                <constraint firstItem="qde-Tk-wHA" firstAttribute="top" secondItem="Dog-Zu-PbA" secondAttribute="bottom" constant="22" id="VPh-mZ-0F9"/>
+                <constraint firstItem="Jeb-2h-Kir" firstAttribute="leading" secondItem="aEe-Wo-mAS" secondAttribute="leading" id="cTl-Bs-DqJ"/>
+                <constraint firstItem="qde-Tk-wHA" firstAttribute="top" secondItem="Fb9-aX-Eil" secondAttribute="top" constant="124" id="fp0-CD-0Zg"/>
+                <constraint firstItem="Dog-Zu-PbA" firstAttribute="leading" secondItem="aEe-Wo-mAS" secondAttribute="leading" constant="24" id="fps-ex-nUc"/>
+                <constraint firstItem="Zaf-34-iZy" firstAttribute="leading" secondItem="aEe-Wo-mAS" secondAttribute="leading" id="mMR-wx-ZrT"/>
+                <constraint firstItem="JUv-5N-qh3" firstAttribute="centerX" secondItem="D15-vH-cga" secondAttribute="centerX" id="mkz-pi-LDr"/>
+                <constraint firstItem="HJZ-Bg-iC8" firstAttribute="top" secondItem="9id-EQ-yEU" secondAttribute="top" id="myo-aD-AUB"/>
+                <constraint firstItem="qde-Tk-wHA" firstAttribute="leading" secondItem="aEe-Wo-mAS" secondAttribute="leading" id="oZz-nP-syS"/>
+                <constraint firstItem="aEe-Wo-mAS" firstAttribute="trailing" secondItem="D15-vH-cga" secondAttribute="trailing" constant="40" id="rA5-gL-cDR"/>
+                <constraint firstItem="Zaf-34-iZy" firstAttribute="centerX" secondItem="aEe-Wo-mAS" secondAttribute="centerX" id="tdK-Rt-aUr"/>
+                <constraint firstItem="qde-Tk-wHA" firstAttribute="centerX" secondItem="aEe-Wo-mAS" secondAttribute="centerX" id="uW4-nA-teA"/>
+                <constraint firstItem="JUv-5N-qh3" firstAttribute="top" secondItem="D15-vH-cga" secondAttribute="top" id="vz5-Vx-sAW"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home-icon" width="24" height="24"/>
+        <image name="settings-icon-selected" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

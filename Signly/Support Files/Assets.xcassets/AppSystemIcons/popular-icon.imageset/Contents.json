@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "interface-favorite-like-1--reward-social-up-rating-media-like-thumb-hand.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "interface-favorite-like-1--reward-social-up-rating-media-like-thumb-hand-2.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "interface-favorite-like-1--reward-social-up-rating-media-like-thumb-hand-3.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

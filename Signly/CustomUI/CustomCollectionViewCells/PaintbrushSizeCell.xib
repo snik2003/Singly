@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="PaintbrushSizeCell" customModule="Signly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="52" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="52" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-wu-IvE">
+                        <rect key="frame" x="0.0" y="0.0" width="52" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foh-Jl-0Xu">
+                                <rect key="frame" x="1" y="12" width="50" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Foh-Jl-0Xu" firstAttribute="leading" secondItem="b2c-wu-IvE" secondAttribute="leading" constant="1" id="Nsl-8b-yia"/>
+                            <constraint firstItem="Foh-Jl-0Xu" firstAttribute="centerX" secondItem="b2c-wu-IvE" secondAttribute="centerX" id="TyF-YM-xE4"/>
+                            <constraint firstItem="Foh-Jl-0Xu" firstAttribute="top" secondItem="b2c-wu-IvE" secondAttribute="top" constant="12" id="Uul-tp-Goq"/>
+                            <constraint firstItem="Foh-Jl-0Xu" firstAttribute="centerY" secondItem="b2c-wu-IvE" secondAttribute="centerY" id="hAs-pV-bXO"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-Wg-MLg">
+                        <rect key="frame" x="0.0" y="0.0" width="52" height="64"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="buttonAction" destination="gTV-IL-0wX" eventType="touchUpInside" id="NQP-W2-LN6"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="b2c-wu-IvE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Dv-eD-Iwm"/>
+                <constraint firstItem="A6X-Wg-MLg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8yf-jH-tNo"/>
+                <constraint firstItem="A6X-Wg-MLg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="J1q-v9-9Ym"/>
+                <constraint firstItem="b2c-wu-IvE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Uh2-KV-PeB"/>
+                <constraint firstItem="A6X-Wg-MLg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="WSY-qd-nAH"/>
+                <constraint firstItem="b2c-wu-IvE" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="XTv-1c-xzz"/>
+                <constraint firstItem="A6X-Wg-MLg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oqr-Um-Vp0"/>
+                <constraint firstItem="b2c-wu-IvE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rqC-bG-zKF"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="b2c-wu-IvE" id="Ej7-C0-21d"/>
+                <outlet property="button" destination="A6X-Wg-MLg" id="hIL-E2-fgA"/>
+                <outlet property="label" destination="Foh-Jl-0Xu" id="WZ5-G6-dSL"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="42"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="SignColorCell" customModule="Signly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoB-e1-0uh">
+                        <rect key="frame" x="7" y="7" width="26" height="26"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6G-dc-VYV">
+                                <rect key="frame" x="3" y="3" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V0G-ql-Nfq"/>
+                                    <constraint firstAttribute="width" constant="20" id="kDj-AQ-Hds"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="Mgb-6S-O30"/>
+                            <constraint firstAttribute="height" constant="26" id="YCe-a9-6cD"/>
+                            <constraint firstItem="z6G-dc-VYV" firstAttribute="centerX" secondItem="WoB-e1-0uh" secondAttribute="centerX" id="gnI-4n-cyW"/>
+                            <constraint firstItem="z6G-dc-VYV" firstAttribute="centerY" secondItem="WoB-e1-0uh" secondAttribute="centerY" id="ibW-uY-z7Y"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-Qm-Cxv">
+                        <rect key="frame" x="6" y="6" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Ezu-Fr-Vai"/>
+                            <constraint firstAttribute="width" constant="28" id="UOX-zr-3j0"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="buttonAction" destination="gTV-IL-0wX" eventType="touchUpInside" id="l8l-e9-pHs"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jhS-Qm-Cxv" firstAttribute="centerY" secondItem="WoB-e1-0uh" secondAttribute="centerY" id="LWx-TL-hBn"/>
+                <constraint firstItem="WoB-e1-0uh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dEg-lU-YdG"/>
+                <constraint firstItem="WoB-e1-0uh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="lKV-wW-AAG"/>
+                <constraint firstItem="jhS-Qm-Cxv" firstAttribute="centerX" secondItem="WoB-e1-0uh" secondAttribute="centerX" id="vDa-4N-3VM"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="WoB-e1-0uh" id="q9I-57-IZs"/>
+                <outlet property="button" destination="jhS-Qm-Cxv" id="J0K-HH-2lr"/>
+                <outlet property="colorView" destination="z6G-dc-VYV" id="rI8-e3-aZC"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="42"/>
+        </collectionViewCell>
+    </objects>
+</document>

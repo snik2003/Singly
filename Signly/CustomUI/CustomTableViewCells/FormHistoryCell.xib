@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="FormHistoryCell" customModule="Signly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIV-UN-WCe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQd-kx-R4S">
+                                <rect key="frame" x="0.0" y="8" width="284" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ3-eA-z79" userLabel="DateLabel">
+                                <rect key="frame" x="0.0" y="28.5" width="284" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1KA-kU-VVB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbV-lt-9i5" userLabel="ClearButton">
+                                <rect key="frame" x="290" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Mqb-HV-ipJ"/>
+                                    <constraint firstAttribute="height" constant="24" id="VqO-B7-Kam"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="clear-button"/>
+                                <connections>
+                                    <action selector="clearButtonAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ci1-7F-IoC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mQd-kx-R4S" firstAttribute="leading" secondItem="jIV-UN-WCe" secondAttribute="leading" id="5fh-oX-Mzj"/>
+                            <constraint firstItem="gJ3-eA-z79" firstAttribute="centerX" secondItem="jIV-UN-WCe" secondAttribute="centerX" constant="-18" id="6Vf-zt-6bt"/>
+                            <constraint firstItem="mQd-kx-R4S" firstAttribute="centerX" secondItem="jIV-UN-WCe" secondAttribute="centerX" constant="-18" id="BTu-nU-dbn"/>
+                            <constraint firstItem="mQd-kx-R4S" firstAttribute="centerY" secondItem="jIV-UN-WCe" secondAttribute="centerY" constant="-10" id="MnU-rB-xbv"/>
+                            <constraint firstItem="FbV-lt-9i5" firstAttribute="centerY" secondItem="jIV-UN-WCe" secondAttribute="centerY" id="TTO-WO-qqz"/>
+                            <constraint firstAttribute="trailing" secondItem="FbV-lt-9i5" secondAttribute="trailing" constant="6" id="XDv-Bi-TZA"/>
+                            <constraint firstItem="gJ3-eA-z79" firstAttribute="leading" secondItem="jIV-UN-WCe" secondAttribute="leading" id="a1v-oB-7H6"/>
+                            <constraint firstItem="gJ3-eA-z79" firstAttribute="top" secondItem="mQd-kx-R4S" secondAttribute="bottom" id="tve-nf-bjE"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-Dh-eVD">
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="56"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="buttonAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="935-iF-Ffp"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jIV-UN-WCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0YS-H9-z3N"/>
+                    <constraint firstItem="b2e-Dh-eVD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="59h-KM-Nkd"/>
+                    <constraint firstItem="b2e-Dh-eVD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rhz-cN-9bt"/>
+                    <constraint firstItem="jIV-UN-WCe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="X4d-xP-43n"/>
+                    <constraint firstItem="b2e-Dh-eVD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YzD-Pu-TjP"/>
+                    <constraint firstItem="b2e-Dh-eVD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-18" id="chL-9C-fTE"/>
+                    <constraint firstItem="jIV-UN-WCe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j8D-7J-p7J"/>
+                    <constraint firstItem="jIV-UN-WCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mYJ-RK-DQr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="jIV-UN-WCe" id="366-zJ-kRU"/>
+                <outlet property="button" destination="b2e-Dh-eVD" id="F6f-ej-aQI"/>
+                <outlet property="clearButton" destination="FbV-lt-9i5" id="UCp-aE-T0Z"/>
+                <outlet property="dateLabel" destination="gJ3-eA-z79" id="JB6-5Y-aTP"/>
+                <outlet property="label" destination="mQd-kx-R4S" id="gMF-lV-2op"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="42"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clear-button" width="20" height="20"/>
+    </resources>
+</document>

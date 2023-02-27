@@ -1,0 +1,172 @@
+/* 
+  Localizable.strings
+  Signly
+
+  Created by Сергей Никитин on 03.09.2022.
+  
+*/
+
+// Common
+"common.title.alert" = "Attention!";
+"common.ok.button.alert" = "OK";
+"common.cancel.button.alert" = "Cancel";
+"common.yes.button.alert" = "Yes";
+"common.no.button.alert" = "No";
+"common.close.button.alert" = "Close";
+
+// Common Errors
+"common.error.bad.data" = "Not enough data to generate document";
+"common.error.no.document.id" = "Document was not found";
+
+// Onboard screen
+"onboard.screen.continue.button.title" = "Continue";
+"onboard.screen.onboard1.hint.text" = "Scan with camera. Upload from photo, email, files and more!";
+"onboard.screen.onboard2.hint.text" = "Sign and send documents anytime, anywhere";
+"onboard.screen.onboard3.hint.text" = "Draw signature using your finger";
+"onboard.screen.onboard4.hint.text" = "Get all your documents signed";
+
+// Paywall screen
+"paywall.screen.purchase.premium.title" = "Increase Your Productivity";
+"paywall.screen.purchase.premium.benefit1.title" = "Unlimited signing";
+"paywall.screen.purchase.premium.benefit2.title" = "Export without limits";
+"paywall.screen.purchase.premium.benefit3.title" = "Advanced signing tools";
+"paywall.screen.purchase.premium.button.title" = "Try it now";
+"paywall.screen.restore.purchases.button.title" = "Restore";
+"paywall.screen.terms.of.use.button.title" = "Terms of use";
+"paywall.screen.privacy.policy.button.title" = "Privacy policy";
+"paywall.screen.default.popular.product.title" = "Popular";
+"paywall.screen.product.subscription.period.added.text" = "per";
+"paywall.screen.product.trial.period.added.text" = "free";
+"paywall.screen.product.lifetime.purchase.period.title" = "Forever";
+"paywall.banner.title.text" = "Get Premium";
+"paywall.banner.subtitle.text" = "Increase Your Productivity";
+
+// Main screen
+"main.screen.header.label.title" = "Documents";
+"main.screen.tabbar.home.button.title" = "Home";
+"main.screen.tabbar.settings.button.title" = "Settings";
+"main.screen.document.menu.sign.item.title" = "Sign";
+"main.screen.document.menu.share.item.title" = "Share";
+"main.screen.document.menu.rename.item.title" = "Rename";
+"main.screen.document.menu.preview.item.title" = "Preview";
+"main.screen.document.menu.dublicate.item.title" = "Dublicate";
+"main.screen.document.menu.delete.item.title" = "Delete";
+"main.screen.delete.document.confirmation.message.text" = "Are you sure you want to\ndelete this document?";
+"main.screen.opening.document.loading.title" = "Opening a document";
+"main.screen.loading.documents.loading.title" = "Loading documents";
+"main.screen.deleting.document.loading.title" = "Deleting a document";
+"main.screen.dublicate.document.loading.title" = "Dublicate a document";
+"main.screen.rename.document.loading.title" = "Renaming a document";
+"main.screen.rename.document.alert.title.text" = "Rename document";
+"main.screen.rename.document.alert.message.text" = "Enter a new name for a document";
+"main.screen.rename.document.alert.rename.action.text" = "Rename";
+"main.screen.rename.document.alert.cancel.action.text" = "Cancel";
+"main.screen.rename.document.alert.placeholder.text" = "Document new name...";
+"main.screen.dublicated.document.added.title.text" = "Copy";
+"main.screen.signed.document.added.title.text" = "Signed version";
+
+// Settings screen
+"settings.screen.header.label.title" = "Settings";
+"settings.screen.menu.name.title" = "Name";
+"settings.screen.menu.email.title" = "Email";
+"settings.screen.menu.company.title" = "Company";
+"settings.screen.menu.signature.title" = "Signature";
+"settings.screen.menu.initials.title" = "Initials";
+"settings.screen.menu.privacy.title" = "Privacy Policy";
+"settings.screen.menu.terms.title" = "Terms of Service";
+"settings.screen.menu.contact.title" = "Contact the Developer";
+"settings.screen.menu.name.placeholder" = "What is your name?";
+"settings.screen.menu.email.placeholder" = "Enter your email";
+"settings.screen.menu.company.placeholder" = "Where do you work?";
+"settings.screen.menu.signature.placeholder" = "Add signature";
+"settings.screen.menu.initials.placeholder" = "Add initials";
+
+// Import Document Screen
+"import.document.screen.header.label.title" = "Import Document";
+"another.app.screen.header.label.title" = "Another app";
+"import.document.screen.scan.method.title" = "Scan";
+"import.document.screen.photos.method.title" = "Photos";
+"import.document.screen.files.method.title" = "Files";
+"import.document.screen.email.method.title" = "Email";
+"import.document.screen.other.method.title" = "Another app";
+"import.document.screen.open.document.error.message" = "Document opening error";
+"import.document.screen.import.document.error.message" = "Document import error";
+
+// Preview Document Screen
+"preview.screen.done.button.title" = "Next";
+"preview.screen.crop.choose.button.title" = "Done";
+"preview.screen.delete.page.confirm.text" = "Are you sure you want to delete current page from document?";
+"preview.screen.delete.single.page.error.text" = "You cannot delete a single page from document";
+"preview.screen.rotate.page.menu.message.text" = "Specify the angle and direction to which you want to rotate document";
+"preview.screen.rotate.page.rotate.90.left.text" = "Rotate 90 degrees to left";
+"preview.screen.rotate.page.rotate.90.right.text" = "Rotate 90 degrees to right";
+"preview.screen.rotate.page.custom.angle.text" = "Rotate custom angle";
+"preview.screen.rotate.alert.message.text" = "Specify the rotation angle value from 1 to 359";
+"preview.screen.rotate.alert.done.action.text" = "Done";
+"preview.screen.rotate.alert.cancel.action.text" = "Cancel";
+"preview.screen.rotate.alert.placeholder.text" = "Enter angle value...";
+"preview.screen.rotate.alert.error.text" = "Incorrect angle value was entered";
+
+// Crop Document Screen
+"crop.screen.header.label.title" = "Crop document";
+"crop.screen.crop.button.title" = "Done";
+"crop.screen.hint.label.title" = "Drag near corners to adjust bounds";
+
+// Upgrade View
+"upgrade.view.header.title" = "Get Premium";
+"upgrade.view.action.title" = "Upgrade";
+"upgrade.view.multipaging.message.text" = "Upgrade to get multi-page scanning";
+"upgrade.view.signature.message.text" = "Upgrade to be able add signature";
+"upgrade.view.initials.message.text" = "Upgrade to be able add initials";
+"upgrade.view.freestyle.message.text" = "Upgrade to get freestyle feature";
+"upgrade.view.additional.message.text" = "Upgrade to get additional features";
+
+// Filter Screen
+"filter.screen.header.label.title" = "Filter";
+"filter.screen.done.button.title" = "Done";
+"filter.screen.original.filter.label.title" = "Original";
+"filter.screen.black.white.filter.label.title" = "BW";
+"filter.screen.grayscale.filter.label.title" = "Grayscale";
+"filter.screen.contrast.filter.label.title" = "Contrast";
+"filter.screen.brightness.filter.label.title" = "Brightness";
+
+// Signing screen
+"singing.screen.header.label.title" = "Signing";
+"singing.screen.preview.header.label.title" = "Preview";
+"signing.screen.finish.button.title" = "Finish";
+"signing.screen.done.button.title" = "Save";
+"signing.screen.pages.button.title" = "Pages";
+"singing.screen.toolbar.signature.button.title" = "Signature";
+"singing.screen.toolbar.initials.button.title" = "Initials";
+"singing.screen.toolbar.freestyle.button.title" = "Freestyle";
+"singing.screen.toolbar.text.button.title" = "Text";
+"singing.screen.toolbar.checkbox.button.title" = "Checkbox";
+"singing.screen.toolbar.date.button.title" = "Date";
+"singing.screen.signing.process.loading.title" = "Signing a document";
+"singing.screen.success.signed.document.title.text" = "You've signed";
+"singing.screen.success.signed.document.subtitle.text" = "The file will be saved in your documents on Home screen";
+"singing.screen.success.signed.document.share.button.title" = "Share Document";
+"singing.screen.success.signed.document.close.button.title" = "Go to Home screen";
+"singing.screen.paintbrush.style.model.title" = "Style";
+"singing.screen.paintbrush.color.model.title" = "Color";
+"singing.screen.paintbrush.size.model.title" = "Font Size";
+"singing.screen.confirm.save.draft.message.text" = "To save as draft you need to upgrade your plan";
+"singing.screen.confirm.save.draft.upgrade.button.title" = "Upgrade";
+"singing.screen.confirm.save.draft.cancel.button.title" = "Cancel";
+"singing.screen.confirm.save.draft.discard.button.title" = "Discard Changes";
+
+// Add Signature screen
+"add.signature.screen.header.label.title" = "Your signature";
+"add.initials.screen.header.label.title" = "Your Initials";
+"add.freestyle.screen.header.label.title" = "Freestyle";
+"add.signature.screen.save.button.title" = "Save";
+"add.signature.screen.clear.button.title" = "Clear";
+"add.signature.screen.clear.confirmation.message.text" = "Are you sure you want to\nclear $DRAW_TYPE$?";
+"add.signature.screen.delete.confirmation.message.text" = "Are you sure you want to\ndelete $DRAW_TYPE$?";
+"add.signature.screen.delete.error.message.text" = "Are you sure you want to\ndelete $DRAW_TYPE$?";
+
+// Signature Form
+"signature.form.copy.form.message.text" = "Please specify where to copy this signature image?";
+"signature.form.copy.form.this.page.title" = "To this document page";
+"signature.form.copy.form.all.pages.title" = "To all document pages";
+"signature.form.was.copied.to.all.pages.success.message.text" = "The signature image was copied to all document pages";

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Semibold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PDFViewController" customModule="Signly" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="gfs-JU-PhC" id="8zh-4v-45b"/>
+                <outlet property="backView" destination="w4a-lI-sVS" id="5SC-Ve-fh1"/>
+                <outlet property="docNameLabel" destination="oJJ-ml-NzA" id="3nZ-kB-AF4"/>
+                <outlet property="docPageLabel" destination="uuf-Vj-Oec" id="wC5-Tq-iad"/>
+                <outlet property="pagesView" destination="NUB-hg-d8s" id="Zc9-HQ-h4V"/>
+                <outlet property="thumbView" destination="mmV-4e-4VR" id="n5k-Wz-WFt"/>
+                <outlet property="thumbViewHeightConstraint" destination="lfx-FN-esR" id="oOV-TP-nWK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfs-JU-PhC" userLabel="CloseButton">
+                    <rect key="frame" x="16" y="38.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="vu6-vQ-s2j"/>
+                        <constraint firstAttribute="width" constant="24" id="y3h-G4-F4Q"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="close-button"/>
+                    <connections>
+                        <action selector="backButtonAction" destination="-1" eventType="touchUpInside" id="Z9b-sS-4sU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF Document fgdfgdfgdfgdfgsdfdsfdf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJJ-ml-NzA" userLabel="NameLabel">
+                    <rect key="frame" x="60" y="25" width="294" height="50.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="52" id="OhX-0w-bAW"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="uxM-1V-wwR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4a-lI-sVS" userLabel="BackView">
+                    <rect key="frame" x="0.0" y="90.5" width="414" height="651.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUB-hg-d8s" userLabel="PagesView">
+                    <rect key="frame" x="40" y="120.5" width="75" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uuf-Vj-Oec" userLabel="PageLabel">
+                            <rect key="frame" x="5" y="2" width="65" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="uuf-Vj-Oec" firstAttribute="centerX" secondItem="NUB-hg-d8s" secondAttribute="centerX" id="0pr-ee-dBJ"/>
+                        <constraint firstItem="uuf-Vj-Oec" firstAttribute="leading" secondItem="NUB-hg-d8s" secondAttribute="leading" constant="5" id="8fw-BA-4Ze"/>
+                        <constraint firstAttribute="width" constant="75" id="XZc-c5-b9K"/>
+                        <constraint firstAttribute="height" constant="35" id="Xh2-Qo-6Zc"/>
+                        <constraint firstItem="uuf-Vj-Oec" firstAttribute="centerY" secondItem="NUB-hg-d8s" secondAttribute="centerY" id="h6Q-l1-s7k"/>
+                        <constraint firstItem="uuf-Vj-Oec" firstAttribute="top" secondItem="NUB-hg-d8s" secondAttribute="top" constant="2" id="uad-pe-2oi"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmV-4e-4VR" userLabel="ThumbView">
+                    <rect key="frame" x="0.0" y="742" width="414" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="lfx-FN-esR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="w4a-lI-sVS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2a5-NX-7RI"/>
+                <constraint firstItem="NUB-hg-d8s" firstAttribute="leading" secondItem="w4a-lI-sVS" secondAttribute="leading" constant="40" id="9GN-fO-XgG"/>
+                <constraint firstItem="NUB-hg-d8s" firstAttribute="top" secondItem="w4a-lI-sVS" secondAttribute="top" constant="30" id="AD1-d3-VFP"/>
+                <constraint firstItem="gfs-JU-PhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Aid-V4-254"/>
+                <constraint firstItem="mmV-4e-4VR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fbv-fS-n9y"/>
+                <constraint firstItem="mmV-4e-4VR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="PKe-O2-Kr3"/>
+                <constraint firstItem="oJJ-ml-NzA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="YQa-uZ-bOe"/>
+                <constraint firstItem="oJJ-ml-NzA" firstAttribute="leading" secondItem="gfs-JU-PhC" secondAttribute="trailing" constant="20" id="Yrx-yN-HQX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mmV-4e-4VR" secondAttribute="bottom" id="epY-Qy-66H"/>
+                <constraint firstItem="oJJ-ml-NzA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fWB-rg-IUy"/>
+                <constraint firstItem="w4a-lI-sVS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="muc-0I-r4l"/>
+                <constraint firstItem="gfs-JU-PhC" firstAttribute="centerY" secondItem="oJJ-ml-NzA" secondAttribute="centerY" id="qoh-ra-tSY"/>
+                <constraint firstItem="mmV-4e-4VR" firstAttribute="top" secondItem="w4a-lI-sVS" secondAttribute="bottom" id="yJa-O4-UsS"/>
+                <constraint firstItem="w4a-lI-sVS" firstAttribute="top" secondItem="oJJ-ml-NzA" secondAttribute="bottom" constant="15" id="zky-it-Wld"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-button" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
